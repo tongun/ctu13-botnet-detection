@@ -21,7 +21,8 @@ Uses the below scripts for each scenario in CTU13 and generates feature files.
 
 #### aggregated_features_bro_logs.py
 
-Processes the bro conn log in the csv format, where each row is:
+As a first step, we sort rows in the Zeek (bro) connection logs by time and convert to csv. 
+This script processes the Zeek conn log in the csv format, where each row is:
 
 ts, uid, src_ip, src_port, dst_ip, dst_port, protocol, service, duration, bytes_outgoing, bytes_incoming, state, packets_outgoing, packets_incoming
 
